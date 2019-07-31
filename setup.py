@@ -14,7 +14,7 @@ URL = 'https://github.com/AlecThomson/aasjobalert'
 EMAIL = 'alec.thomson@anu.edu.au'
 AUTHOR = 'Alec Thomson'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1'
+VERSION = '0.3'
 
 REQUIRED = [
     'bs4', 'requests', 'datetime',
