@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import bs4, requests, smtplib
+import bs4
+import requests
 import datetime
 
 currentDT = datetime.datetime.now()
