@@ -61,13 +61,12 @@ def get_jobs(keyword):
     else:
         print("No post-doc positions with the keyword '"+ keyword +"' were found...")
 
-if __name__ == "__main__":
+def main():
     import argparse
 
     # Help string to be shown using the -h option
     descStr = """
     Search the AAS job register for post-doc positions in the last year.
-    Some code stolen from https://www.codementor.io/gergelykovcs/how-and-why-i-built-a-simple-web-scrapig-script-to-notify-us-about-our-favourite-food-fcrhuhn45#the-process-of-building-the-web-scrapig-script
     """
 
     # Parse the command line options
@@ -79,3 +78,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     get_jobs(args.keyword[0])
+
+if __name__ == "__main__":
+    main()

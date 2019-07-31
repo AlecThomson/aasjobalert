@@ -80,9 +80,9 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    py_modules=['makepics'],
+    py_modules=['aasalert'],
     entry_points={
-        'console_scripts': ['cubei=makepics:main'],
+        'console_scripts': ['aasalert=aasalert:main'],
     },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
