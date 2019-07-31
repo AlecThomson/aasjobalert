@@ -4,24 +4,30 @@ AASJobAlert is a Python script for checking the AAS Job Register.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pypi.org/) to install aasalert.
 
 ```bash
-pip install foobar
+pip install aasalert
 ```
 
 ## Usage
 
-```python
-import foobar
+```bash
+usage: aasalert.py [-h] keyword
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+    Search the AAS job register for post-doc positions in the last year.
+    Some code stolen from https://www.codementor.io/gergelykovcs/how-and-why-i-built-a-simple-web-scrapig-script-to-notify-us-about-our-favourite-food-fcrhuhn45#the-process-of-building-the-web-scrapig-script
+
+
+positional arguments:
+  keyword     Keyword to search the AAS job register for.
+
+optional arguments:
+  -h, --help  show this help message and exit
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome.
 
 
 ## License
