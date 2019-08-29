@@ -29,20 +29,23 @@ def get_jobs(keyword):
     if available:
         print("Post-doc positions with the keyword '"+ keyword +"' are available!")
         print('\n')
+        aastring = 'https://jobregister.aas.org'
         i = 1
         jobname = 'jobs'
         while jobname != '':
             jobname =  str(alltext.select('#block-system-main > div > table > tbody > tr:nth-child('+str(i)+')'))
             start = jobname.find('/ad/', 0, len(jobname))
+            job_url = jobname[start:start+12]
             jobname = jobname[start+14:]
             end = jobname.find('<', 0, len(jobname))
             if jobname != '':
                 jobname = jobname[:end]
                 print('•'+jobname)
+                print('URL: ' + aastring + job_url)
                 print('\n')
 
             i += 1
-        print('Follow this link for details: ' + url)
+        print('Full search link: ' + url)
 
         # TO-DO (maybe) - implement email notification
         # ------------------- E-mail list ------------------------
